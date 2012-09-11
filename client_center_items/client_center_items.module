@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Client Center Items feature.
+ */
+
+include_once 'client_center_items.features.inc';
