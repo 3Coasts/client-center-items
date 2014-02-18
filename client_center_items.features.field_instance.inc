@@ -13,11 +13,7 @@ function client_center_items_field_default_field_instances() {
   // Exported field_instance: 'node-client_center_item-field_category'
   $field_instances['node-client_center_item-field_category'] = array(
     'bundle' => 'client_center_item',
-    'default_value' => array(
-      0 => array(
-        'target_id' => 3,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -42,6 +38,11 @@ function client_center_items_field_default_field_instances() {
     'label' => 'Category',
     'required' => 1,
     'settings' => array(
+      'behaviors' => array(
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
